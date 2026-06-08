@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Page | Python Scripts | Official Hub | SN Computer Coding Hub</title>
+    <style>
+        /* Modern Digital Theme Styling */
+        :root {
+            --bg-color: #0a0b10;
+            --card-bg: #121420;
+            --accent-neon: #00f2fe;
+            --accent-pink: #4facfe;
+            --text-main: #ffffff;
+            --text-muted: #8e92a4;
+            --youtube-red: #ff0000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header / Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: rgba(10, 11, 16, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--accent-neon), var(--accent-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-neon);
+        }
+
+        /* Content Grid Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent-neon);
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        /* Glassmorphism Cards */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s, border-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 242, 254, 0.3);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-btn {
+            align-self: flex-start;
+            color: var(--accent-neon);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .card-btn:hover {
+            color: var(--text-main);
+        }
+
+        /* Photo Gallery Specifics */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .photo-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+            background: #222;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            header { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-neon);
+        }
+
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">OFFICIAL HUB</div>
+        <nav>
+            <a href="python-3.14.2-amd64.exe">Install Python For Windows 🐱‍💻</a>
+            <a href="VSCodeUserSetup-x64-1.108.2.exe">Install Visual Studio Code app for Windows 🐱‍💻</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+      
+    <section class="hero">
+        <h1>Welcome to the SN Computer Coding Hub</h1>
+        <p>Explore custom applications, source code projects, exclusive products, and media configurations all in one central hub.</p>
+        <a href="https://www.youtube.com/@SN_Computer_Coding" target="_blank" class="yt-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Subscribe on YouTube
+        </a>
+
+        
+    </section>
+    
+    <h3><center><a href="python-3.14.2-amd64.exe" class="card-btn">Install python app &rarr;</a></center></h3>
+    <h3><center><a href="VSCodeUserSetup-x64-1.108.2.exe" class="card-btn">Install Visual Studio Code App &rarr;</a></center></h3>
+    
+    <div class="container">
+
+        <h2 class="section-title">Avaivable Files</h2>
+        <h2 id="#" class="section-title">Python Scripts</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>-----------------------</h3>
+                <img src="SN-Computer-Coding_virus.ScreenShot.png">
+                <p>-------------------------------</p>
+            </div>
+
+            <div class="card">
+                <h3>Drawing 4 squares in Python</h3>
+                <img src="Squares_SN-Computer-Coding.png">
+                <p>👉 First Step:</p>
+                <p>Download if you not downloaded python app. (Click "Istall python" to download for windows.)</p>
+                <p>👉 Second Step:</p>
+                <p>Create  a file as "Squares.py" or open your notepad app.</p>
+                <p>👉 Third Step:</p>
+                <p>Copy the Code.(To open code click "Lunch Code" in bottom of this part.)</p>
+                <p>👉 Forth Step:</p>
+                <p>Copy it to your file.</p>
+                <p>👉 Fifth Step:</p>
+                <p>Open it with Python app</p>
+                <p>◻ Click "Install python" to install python for windows. ◻ Click "Lunch Code" to get the code. ◻ Click "YouTube Video" to watch YouTube video. </p>
+                <a href="python-3.14.2-amd64.exe" class="card-btn">Install python &rarr;</a>
+                <a href="https://code.visualstudio.com/docs/setup/windows" class="card-btn">Install Visual Studio Code App &rarr;</a>
+                <a href="4Squares_SN Computer Coding.txt" class="card-btn">Lunch Code &rarr;</a>
+                <a href="Drawing 4 squares in Python_SN-Computer-Coding.mp4" class="card-btn">YouTube Video &rarr;</a>
+                <a href="How to Create Square.mp4" class="card-btn">How to Create &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>----------------</h3>
+                <img src="SN-Computer-Coding_Scratch view.png">
+                <p>------------------------------</p>
+                <a href="Test Your Typing Speed.html" class="card-btn">Launch Web Page &rarr;</a>
+            </div>
+
+        </div>
+
+        <center><h1><a href="#" class="back-link">&UpArrow; Back to top</a></h1></center>
+
+    <footer>
+        &copy; SN Computer Coding 💻
+        Created by Sithum Nawanjana
+    </footer>
+    </div>
